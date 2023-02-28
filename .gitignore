@@ -1,0 +1,9 @@
+sync_FL_Server/Models/*
+!sync_FL_Server/Models/test.txt
+sync_FL_Server/.history
+sync_FL_Server/__pycache__
+sync_FL_Client/data/*
+!sync_FL_Client/data/test.txt
+sync_FL_Client/.history
+.history
+data/*
