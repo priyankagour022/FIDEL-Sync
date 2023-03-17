@@ -18,9 +18,11 @@ def saveLearntMetrice(file_name,score):
         f.truncate()
         f.write(json.dumps(trainMetrics))
 
+
 def FetchClientResults():
     print("-------------Inside fetch client---------")
     return "result from client"
+
 
 # The function is used for training local model based on private data
 def Train(modelString):
@@ -96,7 +98,6 @@ def Train(modelString):
     
     print("Local training completed")
     return encoded_string
-
 
     
 #This function is used fro dataset generation

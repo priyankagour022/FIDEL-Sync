@@ -116,8 +116,6 @@ def saveLearntMetrices(modelName):
 
 def createData():
 
-    print("Inside create data")
-    # return 0
     #Data preprocessing
     database = sio.loadmat('../IEEE for federated learning/data_base_all_sequences_random.mat')
     x_train = database['Data_train_2']
@@ -314,8 +312,7 @@ def visualizeTraining():
 
 
 if __name__ == '__main__':
-    # mp.set_start_method('fork')
-
+    
 # User options for training main()
     while True:
 

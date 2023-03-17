@@ -9,6 +9,8 @@
 #     volumes:
 #       - ./:/app
 
+# To build new image toggle commented code
+
 version: '3'
 services:
   client:
