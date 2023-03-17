@@ -188,7 +188,6 @@ def train():
         executor = concurrent.futures.ProcessPoolExecutor(n)
         futures = [executor.submit(trainFunc, i) for i in range(n)]
         concurrent.futures.wait(futures, return_when='ALL_COMPLETED')
-        # sleep(2)
         print("Out of training")
     except Exception as e:
         print(e)
@@ -353,12 +352,11 @@ if __name__ == '__main__':
             visualizeTraining()
         if (option == "7"):
             wait_threshold = 1
-            for i in range(5):
+            for i in range(60):
                 print("Current Round ", i+1)
                 train()
-                # sleep(threshold)
+                # sleep(wait_threshold)
                 optimiseModels()
-                # sendModel(5)
         if (option == "8"):
             break
         if (option == "0"):

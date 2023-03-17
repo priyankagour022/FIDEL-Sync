@@ -8,15 +8,6 @@ from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import load_model
 import time
 
-
-
-# Returning 0 indicates successfull execution
-
-'''
-    This function stores(send) latest model to respective folder.
-    It works as model transfer machanism for various participating devices. 
-'''
-
 def saveLearntMetrice(file_name,score):
 
     with open(file_name,'r+') as f:
