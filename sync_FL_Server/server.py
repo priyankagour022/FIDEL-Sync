@@ -348,11 +348,9 @@ if __name__ == '__main__':
         if (option == "6"):
             visualizeTraining()
         if (option == "7"):
-            wait_threshold = 1
             for i in range(60):
                 print("Current Round ", i+1)
                 train()
-                # sleep(wait_threshold)
                 optimiseModels()
         if (option == "8"):
             break
